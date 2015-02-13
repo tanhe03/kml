@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document><Folder><name>OGRGeoJSON</name>
+  <Placemark>
+        <name>Seattle Space Needle</name>
+      <Point><coordinates>-122.3491667,47.6202333</coordinates></Point>
+  </Placemark>
+  <Placemark>
+        <name>Set of Lines</name>
+        <Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+      <LineString><coordinates>-122.3487,47.62 -122.35,47.619 -122.351,47.6195 -122.353,47.6195</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+        <name>Polygon</name>
+        <Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+        <ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+                <SimpleData name="title">Example of a Rectangular feature</SimpleData>
+        </SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-122.351,47.6215 -122.351,47.6205 -122.35,47.6205 -122.35,47.6215</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+</Folder>
+<Schema name="OGRGeoJSON" id="OGRGeoJSON">
+        <SimpleField name="title" type="string"></SimpleField>
+</Schema>
+</Document></kml>
